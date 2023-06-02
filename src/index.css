@@ -1,3 +1,5 @@
+
+
 .banner img {
     height: 600px;
     object-fit: cover;
@@ -17,4 +19,26 @@
     justify-content: center;
     padding: 1rem 4rem;
     border-radius: 15px;
+}
+
+.movie-collection{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.movie-details{
+    height: 350px;
+    background-image: url('/src/assets/images/banner1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.image-section {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 3rem;
+}
+.image-section img{
+    width: 50%;
 }
