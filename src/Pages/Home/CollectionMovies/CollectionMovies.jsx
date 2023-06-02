@@ -16,7 +16,7 @@ function CollectionMovies() {
     },[])
 
   return (
-    <div className='mt-5 pt-5'>
+    <div className='mt-5 py-5'>
         <h2 className='text-center'>Movies Collection</h2>
         <div className="movie-collection mt-5">
             {
