@@ -7,7 +7,7 @@ function MovieCard({ item }) {
     const { name, image, genres, type, language, id } = item;
 
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card>
             <Card.Img variant="top" src={image.medium} />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>

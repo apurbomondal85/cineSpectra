@@ -1,10 +1,9 @@
-
-
 .banner img {
     height: 600px;
     object-fit: cover;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, .4);
 }
@@ -21,24 +20,57 @@
     border-radius: 15px;
 }
 
-.movie-collection{
+.movie-collection {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
-.movie-details{
+.movie-details {
     height: 350px;
     background-image: url('/src/assets/images/banner1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .image-section {
     display: flex;
     align-items: center;
     justify-content: end;
     padding-right: 3rem;
 }
-.image-section img{
+
+.image-section img {
     width: 50%;
+}
+
+@media (max-width: 768px) {
+    .nav-menu{
+        display: none;
+    }
+    .movie-collection {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .carousel-caption p{
+        display: none;
+    }
+    .carousel-caption h2{
+        font-size: .6rem;
+    }
+    .banner img {
+        height: 400px;
+    }
+}
+@media (max-width: 500px) {
+    .movie-collection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .carousel-caption{
+        background-color: transparent;
+    }
+    .banner img {
+        height: 300px;
+    }
 }

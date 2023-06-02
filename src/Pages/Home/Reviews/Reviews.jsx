@@ -11,7 +11,7 @@ function Reviews() {
         <div className='py-5 my-5'>
             <h1 className='text-center'>Customer Review</h1>
             <Swiper
-                slidesPerView={2}
+                slidesPerView={window.innerWidth < 768 ? 1 : 2}
                 spaceBetween={30}
                 autoplay={{
                     delay: 2500,
